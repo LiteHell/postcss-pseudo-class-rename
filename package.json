@@ -1,0 +1,56 @@
+{
+  "name": "postcss-pseudo-class-rename",
+  "version": "0.0.0",
+  "description": "PostCSS plugin to rename classes using pseudo class selector",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "postcss-pseudo-class-rename"
+  ],
+  "scripts": {
+    "test": "jest --coverage && eslint ."
+  },
+  "author": "LiteHell <litehell@litehell.info>",
+  "license": "MIT",
+  "repository": "https://github.com/LiteHell/postcss-pseudo-class-rename",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "peerDependencies": {
+    "postcss": "^8.4.19"
+  },
+  "devDependencies": {
+    "clean-publish": "^3.4.2",
+    "eslint": "^8.0.1",
+    "eslint-plugin-jest": "^25.2.2",
+    "jest": "^27.3.1",
+    "postcss": "^8.3.11"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:jest/recommended"
+    ],
+    "rules": {
+      "jest/expect-expect": "off"
+    }
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "statements": 100
+      }
+    }
+  },
+  "dependencies": {
+    "postcss-selector-parser": "^6.0.11"
+  }
+}
